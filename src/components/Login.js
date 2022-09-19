@@ -35,7 +35,7 @@ const useStyles = makeStyles(
     },
 
     card2 : {
-        height : '5vh',
+        height : '8vh',
         marginTop : '2%'
     }
 
