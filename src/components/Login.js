@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useContext } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -19,9 +20,13 @@ import TextField from '@mui/material/TextField';
 import {Link} from  'react-router-dom';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload'
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import { AuthContext } from '../context/AuthContext';
 
 
 export default function Login() {
+
+const store = useContext(AuthContext)
+console.log(store)
 
 const useStyles = makeStyles(
     {
